@@ -7,7 +7,9 @@ vim.opt.signcolumn = "yes"
 vim.opt.cursorline = true
 
 -- line wrap
-vim.opt.wrap = false
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.breakindent = true
 
 -- indent
 vim.opt.tabstop = 4
