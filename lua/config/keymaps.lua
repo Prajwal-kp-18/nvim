@@ -51,3 +51,10 @@ vim.keymap.set("n", "<leader>tv", "<cmd>vsplit | terminal<cr>", {
 -- save file
 vim.keymap.set("n", "<C-s>", "<cmd>w<cr>")
 vim.keymap.set("i", "<C-s>", "<Esc><cmd>w<cr>")
+
+-- vertical split opening to the LEFT (same buffer; then :e / picker for another file)
+vim.keymap.set("n", "<leader>sh", "<cmd>leftabove vsplit<cr>", { desc = "Split left" })
+
+-- side-by-side file panes: split right, equalize widths
+vim.keymap.set("n", "<leader>sv", "<cmd>vsplit<cr>", { desc = "Split right" })
+vim.keymap.set("n", "<leader>se", "<C-w>=", { desc = "Equalize splits" })
