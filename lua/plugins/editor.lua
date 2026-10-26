@@ -4,6 +4,16 @@ return {
         opts = {},
     },
     {
+        "sindrets/diffview.nvim",
+        cmd = { "DiffviewOpen", "DiffviewFileHistory" },
+        keys = {
+            { "<leader>gh", "<cmd>DiffviewFileHistory<cr>", desc = "Git commit history" },
+        },
+        opts = {
+            file_history_panel = { win_config = { position = "left", width = 50 } },
+        },
+    },
+    {
         "lukas-reineke/indent-blankline.nvim",
         main = "ibl",
         opts = {},
@@ -19,5 +29,10 @@ return {
                 },
             }
         end
+    },
+    {
+        "sphamba/smear-cursor.nvim",
+        event = "VeryLazy",
+        opts = { cursor_color = "Cursor" },
     },
 }

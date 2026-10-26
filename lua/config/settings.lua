@@ -31,3 +31,6 @@ vim.cmd([[let &t_Ce = "\e[4:0m"]])
 
 -- clipboard
 vim.opt.clipboard = "unnamedplus"
+
+-- cursor color comes from the Cursor hl (set in theme.lua; terminal must honor OSC 12)
+vim.opt.guicursor = "n-v-c-sm:block-Cursor,i-ci-ve:ver25-Cursor,r-cr-o:hor20-Cursor"

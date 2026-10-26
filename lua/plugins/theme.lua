@@ -31,6 +31,7 @@ return {
                         bg = colors.blue0,
                         bold = true,
                     }
+                    highlights.Cursor = { bg = colors.purple, fg = colors.bg }
                 end,
             })
             vim.cmd.colorscheme "tokyonight"
